@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fincare</title>
+    <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @media screen and (min-width: 768px) {
+            footer{top: 10rem; }
+        }
+        @media screen and (max-width: 768px) {
+            footer{top: 7rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-cadastro">
+        <img src="img/fincare-logo.svg" alt="">
+        <hr>
+        <h1>Login</h1>
+        <form action="">
+            <div class="form-campos">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-campos">
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+                <i class="fa-solid fa-key"></i>
+            </div>
+            <div class="d-grid">
+                <button type="button" id="btnEntrar" class="btn btn-primary mb-3">ENTRAR</button>
+                <button type="button" id="btnCadastro" class="btn btn-secondary mb-3">CADASTRAR</button>
+            </div>
+            <a href="javascript:void(0)">Esqueceu sua senha?</a>
+        </form>
+    </div>
+    <footer>© Fincare 2022 - Fiap RM94030</footer>
+    <!-- imports -->
+    <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src=https://kit.fontawesome.com/a9d5746e02.js crossorigin="anonymous"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

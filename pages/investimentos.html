@@ -1,0 +1,193 @@
+<h1 class="title mb-5">LISTA DE INVESTIMENTOS</span>
+  <hr>
+</h1>
+<div class="d-flex justify-content-end justify-content-xs-center mb-3 mb-xs-3">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalCadastrar"><i class="fa-solid fa-plus me-2"></i>CADASTRAR INVESTIMENTO</button>
+</div>
+<div class="pages">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Instituição</th>
+        <th>Valor</th>
+        <th>Data inicial</th>
+        <th>Data final</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Tipo: ">CDB</td>
+        <td data-label="Instituição: ">Bradesco</td>
+        <td data-label="Valor: ">R$ 300,00</td>
+        <td data-label="Data inicial: ">26/06/2022</td>
+        <td data-label="Data final: ">26/06/2021</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-secondary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExcluir"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Tipo: ">Tesouro direto</td>
+        <td data-label="Instituição: ">Orama</td>
+        <td data-label="Valor: ">R$ 1200,00</td>
+        <td data-label="Data inicial: ">26/06/2022</td>
+        <td data-label="Data final: ">26/06/2027</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-secondary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExcluir"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Tipo: ">Poupança</td>
+        <td data-label="Instituição: ">Itaú</td>
+        <td data-label="Valor: ">R$ 4200,00</td>
+        <td data-label="Data inicial: ">26/06/2022</td>
+        <td data-label="Data final: ">---</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-secondary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExcluir"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+      <tr>
+        <td data-label="Tipo: ">Ações</td>
+        <td data-label="Instituição: ">XPI</td>
+        <td data-label="Valor: ">R$ 700,00</td>
+        <td data-label="Data inicial: ">26/06/2022</td>
+        <td data-label="Data final: ">26/06/2024</td>
+        <td>
+          <button type="button" class="btn btn-sm btn-secondary me-1" data-bs-toggle="modal" data-bs-target="#modalEditar"><i class="fa-solid fa-pen"></i></button>
+          <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal" data-bs-target="#modalExcluir"><i class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- modal excluir -->
+<div class="modal fade" id="modalExcluir" tabindex="-1" aria-labelledby="modalExcluir" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalExcluir">Excluir!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Deseja realmente excluir esse registro?
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">EXCLUIR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal cadastrar -->
+<div class="modal fade" id="modalCadastrar" tabindex="-1" aria-labelledby="modalCadastrar" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCadastrar">Cadastrar!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label class="form-label">Tipo:</label>
+              <select class="form-select" id="categoria">
+                  <option selected>Selecione o investimento</option>
+                  <option value="1">Ações</option>
+                  <option value="2">CDB</option>
+                  <option value="3">Tesouro Direto</option>
+                  <option value="4">Poupança</option>
+                  <option value="5">FIIS</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Instituição:</label>
+              <select class="form-select" id="categoria">
+                  <option selected>Selecione a instituição</option>
+                  <option value="1">Bradesco</option>
+                  <option value="2">Itaú</option>
+                  <option value="3">Orama</option>
+                  <option value="4">XPI</option>
+                  <option value="5">Rico</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Valor:</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Data inicial:</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Data final:</label>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">CADASTRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal editar -->
+<div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="modalEditar" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalEditar">Editar!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+            <label class="form-label">Tipo:</label>
+              <select class="form-select" id="categoria">
+                  <option selected>Selecione o investimento</option>
+                  <option value="1" selected>Ações</option>
+                  <option value="2">CDB</option>
+                  <option value="3">Tesouro Direto</option>
+                  <option value="4">Poupança</option>
+                  <option value="5">FIIS</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Instituição:</label>
+              <select class="form-select" id="categoria">
+                  <option selected>Selecione a instituição</option>
+                  <option value="1" selected>Bradesco</option>
+                  <option value="2">Itaú</option>
+                  <option value="3">Orama</option>
+                  <option value="4">XPI</option>
+                  <option value="5">Rico</option>
+                </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Valor:</label>
+            <input type="text" class="form-control" value="R$ 700,00">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Data inicial:</label>
+            <input type="text" class="form-control" value="26/06/2022">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Data final:</label>
+            <input type="text" class="form-control" value="26/06/2024">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CANCELAR</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">EDITAR</button>
+      </div>
+    </div>
+  </div>
+</div>

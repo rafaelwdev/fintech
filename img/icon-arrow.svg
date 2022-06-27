@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46.979" height="28.87" viewBox="0 0 46.979 28.87">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.406" y1="0.669" x2="0.657" y2="0.68" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#0b2345"/>
+      <stop offset="1" stop-color="#792d84"/>
+    </linearGradient>
+  </defs>
+  <g id="fincare-logo" transform="translate(-192.894 -353.922)">
+    <path id="União_1" data-name="União 1" d="M41.629,1.426,36.278,2.85l3.684,2.926c-5.29,8.241-11.406,16.418-13.571,17.433a16.715,16.715,0,0,1-.627-4.306c-.189-2.877-.354-5.362-2.236-6.146-1.079-.448-2.248-.131-3.482.943l-.229.239C14.8,20.275,10.354,23.233,7.76,24.554L5.406,25.68a12.968,12.968,0,0,1-4.394.771c-3.816,0,4.257,3.073,6.054,2.292,2.2-.773,8.112-3.48,14.951-11.854.089.7.146,1.576.19,2.25.215,3.254.509,7.711,4.053,7.711,3.767,0,11.288-10.651,16.512-18.838l3.851,3.059L46.8,5.536,46.979,0Z" transform="translate(192.894 353.922)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
